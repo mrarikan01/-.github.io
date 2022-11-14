@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>ArıkanTarih </title> 
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"> 
+  <link rel="stylesheet" href="./style.css"> 
+ <style type="text/css" id="dcoder_stylesheet">*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #;
+ background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+  min-height: 100vh;
+  font-family: 'Open Sans',sans-serif;
+  display: flex;
+}
+
+.blog-slider {
+  width: 95%;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 25px;
+  border-radius: 25px;
+  height: 400px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 992px) {
+  .blog-slider {
+    max-width: 680px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog-slider {
+    min-height: 500px;
+    height: auto;
+    margin: 180px auto;
+  }
+}
+@media screen and (max-height: 500px) and (min-width: 992px) {
+  .blog-slider {
+    height: 350px;
+  }
+}
+.blog-slider__item {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__item {
+    flex-direction: column;
+  }
+}
+.blog-slider__item.swiper-slide-active .blog-slider__img img {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > * {
+  opacity: 1;
+  transform: none;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(1) {
+  transition-delay: 0.3s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(3) {
+  transition-delay: 0.5s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(5) {
+  transition-delay: 0.7s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(6) {
+  transition-delay: 0.8s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(7) {
+  transition-delay: 0.9s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(8) {
+  transition-delay: 1s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(9) {
+  transition-delay: 1.1s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(10) {
+  transition-delay: 1.2s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(11) {
+  transition-delay: 1.3s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(12) {
+  transition-delay: 1.4s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(13) {
+  transition-delay: 1.5s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(14) {
+  transition-delay: 1.6s;
+}
+.blog-slider__item.swiper-slide-active .blog-slider__content > *:nth-child(15) {
+  transition-delay: 1.7s;
+}
+.blog-slider__img {
+  width: 300px;
+  flex-shrink: 0;
+  height: 300px;
+  background-image: linear-gradient(147deg, #000000 0%, #000000 74%);
+  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+  border-radius: 20px;
+  transform: translateX(-80px);
+  overflow: hidden;
+}
+.blog-slider__img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.blog-slider__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__img {
+    transform: translateY(-50%);
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blog-slider__img {
+    width: 95%;
+  }
+}
+@media screen and (max-height: 500px) and (min-width: 992px) {
+  .blog-slider__img {
+    height: 270px;
+  }
+}
+.blog-slider__content {
+  padding-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__content {
+    margin-top: -80px;
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blog-slider__content {
+    padding: 0;
+  }
+}
+.blog-slider__content > * {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.4s;
+}
+.blog-slider__code {
+  color: #000000;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 500;
+}
+.blog-slider__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2ca7;
+  margin-bottom: 20px;
+}
+.blog-slider__text {
+  color: #000000;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+.blog-slider__button {
+  display: inline-flex;
+  background-image: linear-gradient(147deg, #000000 0%, #000000 74%);
+  padding: 15px 35px;
+  border-radius: 50px;
+  color: #fff;
+  box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
+  text-decoration: none;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 576px) {
+  .blog-slider__button {
+    width: 100%;
+  }
+}
+.blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+.blog-slider__pagination {
+  position: absolute;
+  z-index: 21;
+  right: 20px;
+  width: 11px !important;
+  text-align: center;
+  left: auto !important;
+  top: 50%;
+  bottom: auto !important;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__pagination {
+    transform: translateX(-50%);
+    left: 50% !important;
+    top: 205px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 8px 0;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+  }
+}
+.blog-slider__pagination .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  display: block;
+  border-radius: 10px;
+  background: #1f2ca7;
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+.blog-slider__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #1f2ca7;
+  height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .blog-slider__pagination .swiper-pagination-bullet-active {
+    height: 11px;
+    width: 30px;
+  }
+}</style></head> 
+ <body> 
+  <div class="blog-slider"> 
+   <div class="blog-slider__wrp swiper-wrapper"> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/oeb1hqSWU.png" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">995-1065</span> 
+      <div class="blog-slider__title">
+        İlk Hükümdar Tuğrul Bey 
+      </div> 
+      <div class="blog-slider__text">
+        Tuğrul Bey veya Toğrül, Tuğril, Toghrïl Beg, I. Tuğrul Tam adı: Rükneddîn Ebû Talîb Muhammed Tuğrul-Bey bin Mikail bin Selçuk) ( Farsça: طغرل بیک) (d. 995, Horasan - ö. 4 Eylül 1063, Rey) Büyük Selçuklu Devleti'nin kurucusu ve ilk sultanıdır. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/oeb1hqSWU.png" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">1029-1072</span> 
+      <div class="blog-slider__title">
+        Alp Arslan 
+      </div> 
+      <div class="blog-slider__text">
+        Alp Arslan (Farsça: آلپ ارسلان ; y. 1029 - 24 Kasım 1072), Büyük Selçuklu İmparatorluğu'nun ikinci sultanı olan ve Türklerin Orta Asya'dan Anadolu'ya gelişlerini ve mücadelesini yöneten askeri komutan ve hükümdardır. Doğum adı Muhammed bin Davud Çağrı'dır. 1071 yılında Bizans İmparatorluğu hükümdarı Romen Diyojen ile yaptığı Malazgirt Muharebesi'ndeki başarısından dolayı tanınmaktadır. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/oeb1hqSWU.png" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">1055-1092</span> 
+      <div class="blog-slider__title">
+        I.Melikşah 
+      </div> 
+      <div class="blog-slider__text">
+        I. Melikşah (Farsça: ملكشاه; 6 Ağustos 1055 - 19 Kasım 1092), Büyük Selçuklu İmparatorluğu hükümdarı 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/oeb1hqSWU.png" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">1087-1094 </span> 
+      <div class="blog-slider__title">
+        I.Mahmud 
+      </div> 
+      <div class="blog-slider__text">
+        I. Mahmud (1087-1094, İsfahan), beş yaşında iken 1092-1093 döneminde Büyük Selçuklu Devleti hükümdarı ve 1093-1094'te İsfahan ve Fars bölgesi tâbî hükümdarı ilân edildi. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/oeb1hqSWU.png" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">1081-1104</span> 
+      <div class="blog-slider__title">
+        Berkyaruk 
+      </div> 
+      <div class="blog-slider__text">
+        Berkyaruk (tam adı: Ebu Muzaffer Rukneddin Berkyaruk bin Melikşah, Farsça:أبو المظفر ركن الدنيا والدين بركياروق بن ملكشاه)(Temmuz 1081 - 22 Aralık 1104), Büyük Selçuklu hükümdarı I. Melikşah'ın oğlu ve 1092-1104 yılları arasında Büyük Selçuklu Devleti'nin hükümdarıdır. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/oeb1hqSWU.png" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">1099-¿¿</span> 
+      <div class="blog-slider__title">
+        Muizzedin Melikşah(2.MelikŞah) 
+      </div> 
+      <div class="blog-slider__text">
+        Muizzeddin Melikşah ya da II. Melikşah (d. 1099/1100 - ö. ?) 6. Büyük Selçuklu Sultanı. Berkyaruk'un oğludur. Babası Berkyaruk 1105'te ölünce daha çocuk iken bir yılı süren Büyük Selçuklu sultanlığına getirildiyse de amcası Muhammed Tapar tarafından sultanlık tahtından indirildi. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/oeb1hqSWU.png" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">1082-1118</span> 
+      <div class="blog-slider__title">
+        Muhammed Tapar 
+      </div> 
+      <div class="blog-slider__text">
+        Muhammed Tapar ya da Gıyaseddîn Muhammed Tapar (d. 21 Ocak 1082 - ö. 18 Nisan 1118, Bağdat) Büyük Selçuklu Sultanı ve Melikşah'ın oğlu. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/oeb1hqSWU.png" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">1102,1103-1131</span> 
+      <div class="blog-slider__title">
+        II.Mahmud 
+      </div> 
+      <div class="blog-slider__text">
+        II. Mahmud (d. 1102/1103 - ö. 1131, Hamedan) Büyük Selçuklu Sultanı ve Muhammed Tapar'ın oğlu. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+    <div class="blog-slider__item swiper-slide"> 
+     <div class="blog-slider__img"> 
+      <img src="https://r.resimlink.com/oeb1hqSWU.png" alt=""> 
+     </div> 
+     <div class="blog-slider__content"> <span class="blog-slider__code">1086-1157</span> 
+      <div class="blog-slider__title">
+        Ahmed Sencer 
+      </div> 
+      <div class="blog-slider__text">
+        Ahmed Sencer veya Sultan Sencer ya da Muizzeddin Ahmed Sencer (5 Kasım 1086 - 8 Mayıs 1157), 1097-1118 tarihleri arası Horasan Selçuklu Sultanı, 1118-1157 döneminde Büyük Selçuklu Sultanı. 
+      </div> <a href="#" class="blog-slider__button">Ekranı Kaydır</a> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="blog-slider__pagination"></div> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script> 
+  <script src="script.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mouseWheel: {
+        invert: false,
+    },
+    // autoHeight: true
+    pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+    }
+});</script></body></html>
